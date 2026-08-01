@@ -14,7 +14,7 @@ public class TopKMeans {
             fre.put(data, fre.getOrDefault(data,0)+1);
         }
         PriorityQueue<String> pq = new PriorityQueue<>((a,b)->{
-                if(fre.get(a)== fre.get(b)){
+                if(Objects.equals(fre.get(a), fre.get(b))){
                     return b.compareTo(a);
                 }
                 return fre.get(a)-fre.get(b);
