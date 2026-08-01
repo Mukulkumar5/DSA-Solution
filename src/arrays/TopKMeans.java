@@ -5,7 +5,7 @@ import java.util.*;
 public class TopKMeans {
 
     public static void main(String []args){
-        String str[] = {"i", "j", "i", "k","ghj", "ghj"};
+        String[] str = {"i", "j", "i", "k","ghj", "ghj"};
         System.out.println(topKElements(str, 2));
     }
     public static List<String> topKElements(String []ele, int k){
