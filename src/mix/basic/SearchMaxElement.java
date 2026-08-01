@@ -7,9 +7,9 @@ public class SearchMaxElement {
 // get max ele from array
     public static int maxEle(int []ele){
         int k= ele[0];
-        for(int i=0; i< ele.length; i++){
-            if(ele[i]>k){
-                k = ele[i];
+        for (int j : ele) {
+            if (j > k) {
+                k = j;
             }
         }
         return k;
