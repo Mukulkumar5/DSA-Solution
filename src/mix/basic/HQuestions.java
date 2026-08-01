@@ -1,7 +1,6 @@
 package mix.basic;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class HQuestions {
     public static void main(String[] args) {
