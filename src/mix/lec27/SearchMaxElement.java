@@ -1,4 +1,4 @@
-package mix.basic;
+package mix.lec27;
 
 public class SearchMaxElement {
     public static void main(String[] args) {
@@ -8,10 +8,12 @@ public class SearchMaxElement {
     public static int maxEle(int []ele){
         int k= ele[0];
         for (int j : ele) {
-            if (j > k) {
-                k = j;
-            }
+//            if (j > k) {
+//                k = j;
+//            }
+            k = Math.max(k, j);
         }
+
         return k;
     }
 }
